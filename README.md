@@ -1,2 +1,2 @@
 # ChessForAll
-Chess web site 
+Chess web site  for all
