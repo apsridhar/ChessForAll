@@ -1,0 +1,23 @@
+
+Tomcat setup
+==============
+
+1)download tomcat and install.
+2)intelij settings/tools/externaltool--> add tomcat
+select the catalina.sh file, usually located in the bin folder of your
+Tomcat installation. In  argument type  jpda run
+
+3) to start intelij-tools/externaltools/tomcat
+
+4) to copy the file to tomcat webapps while building the package
+
+	<plugin>
+	    <groupId>org.apache.maven.plugins</groupId>
+	    <artifactId>maven-war-plugin</artifactId>
+	    <version>3.2.1</version>
+		<configuration>
+			<outputDirectory>/Users/sridhar/work/tomcat/apache-tomcat-11.0.1/webapps/</outputDirectory>
+		</configuration>
+	</plugin>
+
+ mvn clean package  or mvn war:war
